@@ -6,8 +6,12 @@
 <label for="spam"> spam</label>
 <input name="spam" #spam>
 </div>
-<button (click) = "addSpam()">submit spam</button> <!-- quando si schiaccia il bottone si chima il metodo addspam che si definisce nel ts-->
-
-
+<button (click) = "addSpam(useless,spam)">submit spam</button> <!-- quando si schiaccia il bottone si chima il metodo addspam che si definisce nel ts-->
 
 </form>
+<ul>
+    <li *ngFor = "let a of articles">
+        {{a}}
+    </li>
+  
+  </ul>

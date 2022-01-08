@@ -10,9 +10,14 @@ export class AppComponent {
   articles = new Array<string>(); //Dichiaro un array di stringhe
 
 
-  addSpam() : boolean
+  addSpam(testo : HTMLInputElement,numero : HTMLInputElement) : boolean   //questi 2 sarebbero useless e spam
   {
-    console.log("ciao");
+    let t = testo.value; // qui prendo il testo della casella
+    let n = Number(numero.value); // qui prendo il numero della casella2
+    for (let index = 0; index < n; index++) {
+      this.articles.push(t);
+      
+    }
     return false;
   }
 }
