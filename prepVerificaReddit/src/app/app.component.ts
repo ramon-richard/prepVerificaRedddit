@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'prepVerificaReddit';
   articles = new Array<string>(); //Dichiaro un array di stringhe
+
+
+  addSpam() : boolean
+  {
+    console.log("ciao");
+    return false;
+  }
 }
