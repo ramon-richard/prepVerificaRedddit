@@ -1,17 +1,19 @@
-<form>
-<div>
-<label for="useless">cose inutile</label>
-<input name="useless" #useless>
-<br>
-<label for="spam"> spam</label>
-<input name="spam" #spam>
-</div>
-<button (click) = "addSpam(useless,spam)">submit spam</button> <!-- quando si schiaccia il bottone si chima il metodo addspam che si definisce nel ts-->
-
-</form>
-<ul>
-    <li *ngFor = "let a of articles">
-        {{a}}
-    </li>
-  
-  </ul>
+<div class="container">
+    <form class="jumbotron">
+    <div class="form-group">
+    <label for="useless">cose inutile</label>
+    <input name="useless" #useless class="form-control">
+    <br>
+    <label for="spam"> spam</label>
+    <input name="spam" #spam class="form-control">
+    </div>
+    <button (click) = "addSpam(useless,spam)"  class="btn btn-primary">submit spam</button> <!-- quando si schiaccia il bottone si chima il metodo addspam che si definisce nel ts-->
+    
+    </form>
+    <ul>
+        <li *ngFor = "let a of articles">
+            {{a}}
+        </li>
+      
+      </ul>
+      </div>
